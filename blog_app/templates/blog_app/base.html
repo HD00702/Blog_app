@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<div>
+        <li>
+            <h1><a href="{% url 'post_list' %}">My blog</a></h1>
+            <a href ="{% url 'post_new'%}">New Post</a>
+        </li>
+</div>
+
+
+
+
+    <div>
+            <div>
+                {% block body_block %}
+                {% endblock %}
+
+            </div>
+    </div>
+</body>
+</html>

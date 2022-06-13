@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "blog_app/base.html" %}
+{% block body_block %}
+
+<h1>{{post.title}}</h1>
+<p>{{ post.content|linebreaksbr }}</p>
+
+{% endblock %}
